@@ -4,14 +4,18 @@ ScriptsOnlyBuild:
     - Scripts.BuildConteiner
     - Scripts.BuildConteinerUI
     - Scripts.BuildInfoUI
+    - UpdateBuild
     Assembly-CSharp.dll:
     - Scripts.Balance
     - Scripts.BuildConteiner
     - Scripts.BuildConteinerUI
     - Scripts.BuildInfoUI
+    - Scripts.CameraMovement
     - Scripts.ChooseBuildUI
     - Scripts.GameManager
     - Scripts.ProgressBar
+    - Scripts.UpdateMenu
+    - UpdateBuild
     Unity.Play.Publisher.Editor.dll:
     - Unity.Play.Publisher.Editor.AnalyticsHelper
     - Unity.Play.Publisher.Editor.PublisherWindow
@@ -29,6 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.PhysicsRaycaster
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -57,194 +62,287 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    fullTypeName: Scripts.BuildInfoUI
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    fullTypeName: Scripts.BuildInfoUI
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    fullTypeName: Scripts.UpdateMenu
+    methodName: BuyButtonPress
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    fullTypeName: Scripts.GameManager
+    methodName: SetIsNoOtherMenuShown
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: Scripts.GameManager
+    methodName: SetIsNoOtherMenuShown
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: Scripts.BuildConteinerUI
+    methodName: PlusButtonClicked
+  - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildInfoUI
-    methodName: createBuild
+    methodName: CreateBuild
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Scripts.BuildConteinerUI
-    methodName: plusButtonClicked
+    methodName: PlusButtonClicked
   sceneClasses:
     Assets/Scenes/scene1/SampleScene.unity:
     - Class: 1
@@ -265,8 +363,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -280,39 +376,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16606}
     - Class: 114
-      Script: {instanceID: 16634}
+      Script: {instanceID: 16636}
     - Class: 114
-      Script: {instanceID: 16648}
+      Script: {instanceID: 16650}
     - Class: 114
-      Script: {instanceID: 17284}
+      Script: {instanceID: 17292}
     - Class: 114
-      Script: {instanceID: 17638}
+      Script: {instanceID: 17646}
     - Class: 114
-      Script: {instanceID: 17838}
+      Script: {instanceID: 17848}
     - Class: 114
-      Script: {instanceID: 18124}
+      Script: {instanceID: 17974}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18138}
     - Class: 114
-      Script: {instanceID: 19944}
+      Script: {instanceID: 18304}
     - Class: 114
-      Script: {instanceID: 20256}
+      Script: {instanceID: 18392}
     - Class: 114
-      Script: {instanceID: 21008}
+      Script: {instanceID: 18544}
     - Class: 114
-      Script: {instanceID: 21068}
+      Script: {instanceID: 19064}
     - Class: 114
-      Script: {instanceID: 21404}
+      Script: {instanceID: 19996}
     - Class: 114
-      Script: {instanceID: 22026}
+      Script: {instanceID: 20314}
     - Class: 114
-      Script: {instanceID: 41470}
+      Script: {instanceID: 20366}
     - Class: 114
-      Script: {instanceID: 41792}
+      Script: {instanceID: 20370}
     - Class: 114
-      Script: {instanceID: 321608}
+      Script: {instanceID: 20694}
     - Class: 114
-      Script: {instanceID: 352444}
+      Script: {instanceID: 20816}
+    - Class: 114
+      Script: {instanceID: 21092}
+    - Class: 114
+      Script: {instanceID: 21154}
+    - Class: 114
+      Script: {instanceID: 21496}
+    - Class: 114
+      Script: {instanceID: 22132}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -542,6 +646,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 822cfb09a383e22c1211d3da28f232cf
+    assemblyName: Assembly-CSharp
+    namespaceName: Scripts
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -614,6 +724,12 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
+      Hash: e1c4576b81f907e1f4f21c0af30cf6ae
+    assemblyName: Assembly-CSharp
+    namespaceName: Scripts
+    className: UpdateMenu
+  - hash:
+      serializedVersion: 2
       Hash: 5b8b7230ad968399f6726aa1269dcdcb
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -630,6 +746,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnControllerColliderHitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: bf5587f11eff70edb4158e059c0d4b46
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: UpdateBuild
   - hash:
       serializedVersion: 2
       Hash: 960935b102b3064f4b924de16426e340
@@ -890,6 +1012,18 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: d2db1367aa87fc320d619486d7fc93bb
+    assemblyName: Assembly-CSharp
+    namespaceName: Scripts
+    className: Balance
+  - hash:
+      serializedVersion: 2
+      Hash: 72c7d373c30e58ee31752ff9206915d9
+    assemblyName: Assembly-CSharp
+    namespaceName: Scripts
+    className: BuildConteinerUI
+  - hash:
+      serializedVersion: 2
       Hash: 1ce63d97d1ca25cba2d91d5f32fd5f79
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -902,9 +1036,9 @@ ScriptsOnlyBuild:
     className: AnimatorMessageListener
   - hash:
       serializedVersion: 2
-      Hash: c991ccaf2ffe3c1de270655d15d756d9
+      Hash: 98721efb3ab43ba0d58c2988954a6c7b
     assemblyName: Assembly-CSharp
-    namespaceName: 
+    namespaceName: Scripts
     className: CameraMovement
   - hash:
       serializedVersion: 2
@@ -918,6 +1052,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 6d1216c28491b83e184fe26a4d747ef0
+    assemblyName: Assembly-CSharp
+    namespaceName: Scripts
+    className: ProgressBar
   - hash:
       serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
@@ -1176,31 +1316,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 72c7d373c30e58ee31752ff9206915d9
-    assemblyName: Assembly-CSharp
-    namespaceName: Scripts
-    className: BuildConteinerUI
-  - hash:
-      serializedVersion: 2
-      Hash: 4414d82d325cb67df78e00982dfce95c
-    assemblyName: Assembly-CSharp
-    namespaceName: Scripts
-    className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 6d1216c28491b83e184fe26a4d747ef0
-    assemblyName: Assembly-CSharp
-    namespaceName: Scripts
-    className: ProgressBar
-  - hash:
-      serializedVersion: 2
-      Hash: d2db1367aa87fc320d619486d7fc93bb
-    assemblyName: Assembly-CSharp
-    namespaceName: Scripts
-    className: Balance
   platform: 20
   scenePathNames:
   - Assets/Scenes/scene1/SampleScene.unity
-  playerPath: C:/unityProjects/testTask3D(Idle)/WebGL Builds
+  playerPath: C:/Users/Max/Documents/GitHub/IdleTown/testTask3D(Idle)/WebGL Builds

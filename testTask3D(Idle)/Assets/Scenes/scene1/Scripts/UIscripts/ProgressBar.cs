@@ -23,7 +23,8 @@ namespace Scripts
             {
                 lastTime = Time.time;
                 GetComponent<Slider>().value = 0;
-                Balance.changeBalance(Balance.incomePerSec);
+                Balance.ChangeBalance(Balance.incomePerSec);
+                Debug.Log("+"+Balance.incomePerSec);
 
             }
         }

@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Scripts;
+using System;
+
 
 namespace Clases
 {
@@ -29,14 +29,23 @@ namespace Clases
             level = build.level;
         }
 
-        public void levelUp()
+        public void LevelUp()
         {
-            incomePerSecond *= 1.5f;
+            float oldIncome = incomePerSecond;
+
+            incomePerSecond = (float)Math.Round(incomePerSecond * 2.5f, 1);
+            Balance.ChangeIncome(incomePerSecond - oldIncome);
             level++;
             upgradePrice += (int)incomePerSecond * 100;
         }
+        public void InfoIfBuildLvlUp(ref string newIncome, ref string newLevel, ref string newUpdatePrice)
+        {
+            newIncome = incomePerSecond * 2.5f + "";
+            newLevel = level+1+"";
+            newUpdatePrice = (upgradePrice + (int)(incomePerSecond * 2.5) * 100) + "";
+        }
 
-        public string getKindOfBuildsInString()
+        public string GetKindOfBuildsInString()
         {
             switch ((int)kind)
             {

@@ -12,7 +12,7 @@ namespace Scripts
             {
                 for (int i = 0; i < buildsContainer.transform.childCount; i++)
                 {
-                    buildsContainer.transform.GetChild(i).GetComponent<BuildInfoUI>().setContent(BuildConteiner.startBuildStats[i]);
+                    buildsContainer.transform.GetChild(i).GetComponent<BuildInfoUI>().SetContent(BuildConteiner.startBuildStats[i]);
                 }
             }
             else
@@ -22,18 +22,18 @@ namespace Scripts
 
                 for (int i = 0; i < BuildConteiner.startBuildStats.Length; i++)
                 {
-                    Instantiate(buildInfoPrefab, buildsContainer.transform).GetComponent<BuildInfoUI>().setContent(BuildConteiner.startBuildStats[i]);
+                    Instantiate(buildInfoPrefab, buildsContainer.transform).GetComponent<BuildInfoUI>().SetContent(BuildConteiner.startBuildStats[i]);
                 }
             }
 
         }
-        public void updateData()
+        public void UpdateData()
         {
             if (buildsContainer.transform.childCount == BuildConteiner.startBuildStats.Length)
             {
                 for (int i = 0; i < buildsContainer.transform.childCount; i++)
                 {
-                    buildsContainer.transform.GetChild(i).GetComponent<BuildInfoUI>().setContent(BuildConteiner.startBuildStats[i]);
+                    buildsContainer.transform.GetChild(i).GetComponent<BuildInfoUI>().SetContent(BuildConteiner.startBuildStats[i]);
                 }
             }
             else
@@ -43,7 +43,7 @@ namespace Scripts
 
                 for (int i = 0; i < BuildConteiner.startBuildStats.Length; i++)
                 {
-                    Instantiate(buildInfoPrefab, buildsContainer.transform).GetComponent<BuildInfoUI>().setContent(BuildConteiner.startBuildStats[i]);
+                    Instantiate(buildInfoPrefab, buildsContainer.transform).GetComponent<BuildInfoUI>().SetContent(BuildConteiner.startBuildStats[i]);
                 }
             }
         }

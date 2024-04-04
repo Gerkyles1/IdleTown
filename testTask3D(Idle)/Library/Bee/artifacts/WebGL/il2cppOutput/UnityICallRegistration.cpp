@@ -476,6 +476,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.CanvasRenderer
 
+	//Start Registrations for type : UnityEngine.Collider
+
+		//System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+		void Register_UnityEngine_Collider_set_enabled();
+		Register_UnityEngine_Collider_set_enabled();
+
+	//End Registrations for type : UnityEngine.Collider
+
 	//Start Registrations for type : UnityEngine.Component
 
 		//System.Void UnityEngine.Component::GetComponentsForListInternal(System.Type,System.Object)
@@ -2609,10 +2617,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform,System.Boolean)
 		void Register_UnityEngine_Transform_SetParent();
 		Register_UnityEngine_Transform_SetParent();
-
-		//System.Void UnityEngine.Transform::TransformDirection_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
-		void Register_UnityEngine_Transform_TransformDirection_Injected();
-		Register_UnityEngine_Transform_TransformDirection_Injected();
 
 		//System.Void UnityEngine.Transform::TransformPoint_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
 		void Register_UnityEngine_Transform_TransformPoint_Injected();

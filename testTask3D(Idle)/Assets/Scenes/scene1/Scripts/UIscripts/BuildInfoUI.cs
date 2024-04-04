@@ -10,21 +10,22 @@ namespace Scripts
         [SerializeField] private Text incoming;
         [SerializeField] private Text price;
         private Build build;
-        public void setContent(Build build)
+        public void SetContent(Build build)
         {
             this.build = build;
-            kindName.text = build.getKindOfBuildsInString();
+            kindName.text = build.GetKindOfBuildsInString();
             incoming.text = build.incomePerSecond.ToString();
             price.text = build.price.ToString();
         }
-        public void createBuild()
+        public void CreateBuild()
         {
             if (build.price <= Balance.balance)
             {
-                Balance.changeBalance(-build.price);
-                GameManager.instance.curentPlaceForBuild.GetComponent<BuildConteiner>().createBuild(build.kind);
+                Balance.ChangeBalance(-build.price);
+                GameManager.instance.curentContainerForBuild.GetComponent<BuildConteiner>().CreateBuild(build.kind);
                 GameManager.instance.chooseBuildUI.SetActive(false);
-                GameManager.instance.curentPlaceForBuild.GetComponent<BuildConteinerUI>().plusButton.SetActive(false);
+                GameManager.instance.curentContainerForBuild.GetComponent<BuildConteinerUI>().plusButton.SetActive(false);
+                GameManager.instance.isNoOtherMenuShown = true;
             }
         }
     }

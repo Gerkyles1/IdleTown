@@ -6,20 +6,27 @@ namespace Scripts
 {
     public class BuildConteiner : MonoBehaviour
     {
-        private Build build;
+        public Build build { get; private set; }
         public static Build[] startBuildStats { get; private set;  } = new Build[]
         {
-            new Build(Build.kindOfBuilds.smallMail, 10, 0.5f, 20),
-            new Build(Build.kindOfBuilds.cocacola, 100, 2f, 200),
-            new Build(Build.kindOfBuilds.imptOffice, 1000, 20f, 2000),
+            new Build(kindOfBuilds.smallMail, 10, 0.5f, 20),
+            new Build(kindOfBuilds.cocacola, 100, 2f, 200),
+            new Build(kindOfBuilds.imptOffice, 1000, 20f, 2000),
         };
-        public void createBuild(kindOfBuilds kind)
+        private void Start()
+        {
+            GetComponent<BoxCollider>().enabled = false;
+        }
+        public void CreateBuild(kindOfBuilds kind)
         {
             ActivateChildObject((int)kind);
             build  = new Build(startBuildStats[(int)kind]);
-            Balance.changeIncome(build.incomePerSecond);
+            Balance.ChangeIncome(build.incomePerSecond);
             startBuildStats[(int)kind].price = (int)(build.price+build.incomePerSecond*20f);
-            GameManager.instance.chooseBuildUI.GetComponent<ChooseBuildUI>().updateData();
+            GameManager.instance.chooseBuildUI.GetComponent<ChooseBuildUI>().UpdateData();
+            GetComponent<BoxCollider>().enabled = true;
+
+
         }
 
         private void ActivateChildObject(int childIndex)

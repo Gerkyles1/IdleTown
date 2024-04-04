@@ -1,32 +1,75 @@
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour
+namespace Scripts
 {
-    public float moveSpeed = 5f;
-
-    private bool isDragging = false;
-    private Vector3 dragStartPosition;
-
-    void Update()
+    public class CameraMovement : MonoBehaviour
     {
-        if (Input.GetMouseButtonDown(0))
+
+        [SerializeField] private float panSpeed = 20f;
+        [SerializeField] private float zoomSpeed = 20f;
+        [SerializeField] private float minZoom = 5f;
+        [SerializeField] private float maxZoom = 30f;
+        [SerializeField] private Vector3 minPosition;
+        [SerializeField] private Vector3 maxPosition;
+
+
+        void Update()
         {
-            isDragging = true;
-            dragStartPosition = Input.mousePosition;
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            isDragging = false;
+            if (GameManager.instance.isNoOtherMenuShown)
+            {
+                if (Input.GetMouseButton(0))
+                {
+                    float mouseX = Input.GetAxis("Mouse X");
+                    float mouseY = Input.GetAxis("Mouse Y");
+
+                    Vector3 moveDir = new Vector3(mouseX, 0f, mouseY);
+
+                    Vector3 desiredPos = transform.position + (-moveDir * panSpeed * Time.deltaTime);
+                    desiredPos.x = Mathf.Clamp(desiredPos.x, minPosition.x, maxPosition.x);
+                    desiredPos.z = Mathf.Clamp(desiredPos.z, minPosition.z, maxPosition.z);
+                    transform.position = desiredPos;
+
+                }
+
+                float scrollWheelInput = Input.GetAxis("Mouse ScrollWheel");
+
+
+                if (scrollWheelInput != 0f)
+                {
+                    ZoomCamera(scrollWheelInput);
+                }
+                else if (Input.touchCount == 2)
+                {
+                    ZoomCameraWithTouch();
+                }
+            }
         }
 
-        if (isDragging)
+        void ZoomCamera(float zoomInput)
         {
-            Vector3 dragDelta = Input.mousePosition - dragStartPosition;
-            float moveX = dragDelta.x * moveSpeed * Time.deltaTime;
-            float moveZ = dragDelta.z * moveSpeed * Time.deltaTime; // Враховуємо Y-координату миші для руху по Z-осі
-
-            // Переміщуємо камеру по осях X та Z
-            transform.Translate(new Vector3(-moveX, 0f, -moveZ));
+            float newZoom = Mathf.Clamp(transform.position.y - zoomInput * zoomSpeed * Time.deltaTime, minZoom, maxZoom);
+            Vector3 newPos = new Vector3(transform.position.x, newZoom, transform.position.z);
+            transform.position = newPos;
         }
+        void ZoomCameraWithTouch()
+        {
+            Touch touchZero = Input.GetTouch(0);
+            Touch touchOne = Input.GetTouch(1);
+
+            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+
+            float prevTouchDeltaMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+            float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
+
+            float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
+
+            float newZoom = Mathf.Clamp(transform.position.y - deltaMagnitudeDiff * zoomSpeed * Time.deltaTime, minZoom, maxZoom);
+
+            Vector3 newPos = new Vector3(transform.position.x, newZoom, transform.position.z);
+
+            transform.position = newPos;
+        }
+
     }
 }

@@ -346,6 +346,8 @@
 "Assets/Scenes/scene1/Scripts/UIscripts/BuildInfoUI.cs"
 "Assets/Scenes/scene1/Scripts/UIscripts/ChooseBuildUI.cs"
 "Assets/Scenes/scene1/Scripts/UIscripts/ProgressBar.cs"
+"Assets/Scenes/scene1/Scripts/UIscripts/UpdateMenu.cs"
+"Assets/Scenes/scene1/Scripts/UpdateBuild.cs"
 -langversion:9.0
 
 /deterministic

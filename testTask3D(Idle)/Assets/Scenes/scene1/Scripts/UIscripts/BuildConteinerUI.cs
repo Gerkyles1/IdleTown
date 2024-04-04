@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Scripts
@@ -7,12 +5,14 @@ namespace Scripts
     public class BuildConteinerUI : MonoBehaviour
     {
         public GameObject plusButton;
-        public void plusButtonClicked()
+        public void PlusButtonClicked()
         {
-            GameManager.instance.chooseBuildUI.gameObject.SetActive(true);
-            GameManager.instance.curentPlaceForBuild = gameObject;
+            if (GameManager.instance.isNoOtherMenuShown)
+            {
+                GameManager.instance.chooseBuildUI.gameObject.SetActive(true);
+                GameManager.instance.curentContainerForBuild = gameObject;
+                GameManager.instance.isNoOtherMenuShown = false;
+            }
         }
-
-
     }
 }

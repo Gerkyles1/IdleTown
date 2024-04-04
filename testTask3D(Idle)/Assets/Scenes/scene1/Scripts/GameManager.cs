@@ -6,7 +6,9 @@ namespace Scripts
     {
         public static GameManager instance;
         public GameObject chooseBuildUI;
-        public GameObject curentPlaceForBuild = null;
+        public GameObject curentContainerForBuild = null;
+        public GameObject updateMenu;
+        public bool isNoOtherMenuShown = true;
 
         void Awake()
         {
@@ -17,8 +19,10 @@ namespace Scripts
                 Destroy(gameObject);
 
             DontDestroyOnLoad(gameObject);
-
-
+        }
+        public void SetIsNoOtherMenuShown(bool b)
+        {
+            isNoOtherMenuShown = b;
         }
     }
 }

@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6435233796685644784}
         m_TargetAssemblyTypeName: Scripts.BuildInfoUI, Assembly-CSharp
-        m_MethodName: createBuild
+        m_MethodName: CreateBuild
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
